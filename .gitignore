@@ -16,7 +16,7 @@ venv/
 env/
 
 # ── ChromaDB persistence ───────────────────────────────────────────
-chroma_db/
+# chroma_db/
 
 # ── Model cache ─────────────────────────────────────────────────────
 .cache/

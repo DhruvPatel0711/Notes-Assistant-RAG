@@ -159,5 +159,5 @@ def test_output_files_exist():
     if not settings.output_path.exists():
         pytest.skip("Output files not yet copied")
 
-    json_files = sorted(settings.output_path.glob("*.json"))
+    json_files = sorted([f for f in settings.output_path.glob("*.json") if not f.name.endswith("cache.json")])
     assert len(json_files) == 28, f"Expected 28 .json files, found {len(json_files)}"

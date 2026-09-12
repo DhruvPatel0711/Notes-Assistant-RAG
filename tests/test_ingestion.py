@@ -194,12 +194,11 @@ class TestBGEEmbeddings:
     First run may be slow due to model download.
     """
 
-    @classmethod
-    @pytest.fixture(scope="class")
-    def embeddings(cls):
-        """Shared embedding instance across all tests in this class."""
-        from src.embeddings.bge import BGEEmbeddings
-        return BGEEmbeddings()
+@pytest.fixture(scope="module")
+def embeddings():
+    """Shared embedding instance across all tests."""
+    from src.embeddings.bge import BGEEmbeddings
+    return BGEEmbeddings()
 
     def test_dimension_is_1024(self, embeddings):
         """BGE-large should produce 1024-dimensional vectors."""
