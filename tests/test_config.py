@@ -35,7 +35,7 @@ def test_default_embedding_model():
     """Default embedding model should be BGE-large."""
     from src.config import settings
 
-    assert settings.embedding_model == "all-MiniLM-L6-v2"
+    assert settings.embedding_model == "BAAI/bge-large-en-v1.5"
 
 
 def test_default_llm_models_is_list():

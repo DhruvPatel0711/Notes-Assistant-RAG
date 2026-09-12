@@ -35,7 +35,7 @@ class Settings(BaseSettings):
 
     google_api_key: str = ""
 
-    embedding_model: str = "all-MiniLM-L6-v2"
+    embedding_model: str = "BAAI/bge-large-en-v1.5"
 
     # Stored as comma-separated string because pydantic-settings parses
     # List[str] env vars as JSON before validators run, which breaks
