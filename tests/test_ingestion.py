@@ -200,15 +200,15 @@ def embeddings():
     from src.embeddings.bge import BGEEmbeddings
     return BGEEmbeddings()
 
-    def test_dimension_is_1024(self, embeddings):
-        """BGE-large should produce 1024-dimensional vectors."""
-        assert embeddings.dimension == 1024
+    def test_dimension_is_384(self, embeddings):
+        """MiniLM should produce 384-dimensional vectors."""
+        assert embeddings.dimension == 384
 
     def test_embed_query_returns_list_of_floats(self, embeddings):
         """embed_query should return a flat list of floats."""
         vector = embeddings.embed_query("test query")
         assert isinstance(vector, list)
-        assert len(vector) == 1024
+        assert len(vector) == 384
         assert all(isinstance(v, float) for v in vector)
 
     def test_embed_documents_returns_list_of_lists(self, embeddings):
@@ -216,7 +216,7 @@ def embeddings():
         vectors = embeddings.embed_documents(["text one", "text two"])
         assert isinstance(vectors, list)
         assert len(vectors) == 2
-        assert all(len(v) == 1024 for v in vectors)
+        assert all(len(v) == 384 for v in vectors)
 
     def test_same_text_produces_same_embedding(self, embeddings):
         """Determinism: same input should always produce same output."""
