@@ -17,7 +17,7 @@ pydantic-settings==2.9.1
 python-dotenv==1.1.0
 
 # ── API ─────────────────────────────────────────────────────────────
-fastapi==0.115.12
+fastapi>=0.115.0
 uvicorn==0.34.2
 slowapi==0.1.9
 
