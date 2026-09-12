@@ -1,0 +1,542 @@
+{
+  "What principle explains why you should never outshine your superior?": {
+    "ID": 1,
+    "Question": "What principle explains why you should never outshine your superior?",
+    "Expected": 1,
+    "Retrieved Top-3": "1, 8, 15",
+    "Retrieved match": "✅",
+    "Final": 1,
+    "Match": "✅"
+  },
+  "Why should you avoid placing too much trust in close friends according to the laws?": {
+    "ID": 2,
+    "Question": "Why should you avoid placing too much trust in close friends according to the laws?",
+    "Expected": 2,
+    "Retrieved Top-3": "10, 12, 18",
+    "Retrieved match": "❌",
+    "Final": 10,
+    "Match": "❌"
+  },
+  "What law states that you must conceal your true intentions?": {
+    "ID": 3,
+    "Question": "What law states that you must conceal your true intentions?",
+    "Expected": 3,
+    "Retrieved Top-3": "4, 12, 19",
+    "Retrieved match": "❌",
+    "Final": 4,
+    "Match": "❌"
+  },
+  "Why is it important to say less than necessary in conversations?": {
+    "ID": 4,
+    "Question": "Why is it important to say less than necessary in conversations?",
+    "Expected": 4,
+    "Retrieved Top-3": "4, 12, 16",
+    "Retrieved match": "✅",
+    "Final": 4,
+    "Match": "✅"
+  },
+  "Which law emphasizes guarding your reputation with your life?": {
+    "ID": 5,
+    "Question": "Which law emphasizes guarding your reputation with your life?",
+    "Expected": 5,
+    "Retrieved Top-3": "26, 25, 5",
+    "Retrieved match": "✅",
+    "Final": 5,
+    "Match": "✅"
+  },
+  "What law advises courting attention at all costs?": {
+    "ID": 6,
+    "Question": "What law advises courting attention at all costs?",
+    "Expected": 6,
+    "Retrieved Top-3": "24, 6, 13",
+    "Retrieved match": "✅",
+    "Final": 6,
+    "Match": "✅"
+  },
+  "How should you handle delegation and taking credit according to Law 7?": {
+    "ID": 7,
+    "Question": "How should you handle delegation and taking credit according to Law 7?",
+    "Expected": 7,
+    "Retrieved Top-3": "13, 7, 11",
+    "Retrieved match": "✅",
+    "Final": 7,
+    "Match": "✅"
+  },
+  "Why should you make other people come to you instead of chasing them?": {
+    "ID": 8,
+    "Question": "Why should you make other people come to you instead of chasing them?",
+    "Expected": 8,
+    "Retrieved Top-3": "13, 22, 8",
+    "Retrieved match": "✅",
+    "Final": 8,
+    "Match": "✅"
+  },
+  "Which law states that you should win through action, never through argument?": {
+    "ID": 9,
+    "Question": "Which law states that you should win through action, never through argument?",
+    "Expected": 9,
+    "Retrieved Top-3": "9, 15, 20",
+    "Retrieved match": "✅",
+    "Final": 9,
+    "Match": "✅"
+  },
+  "What law warns against catching the unhappiness and misfortune of others?": {
+    "ID": 10,
+    "Question": "What law warns against catching the unhappiness and misfortune of others?",
+    "Expected": 10,
+    "Retrieved Top-3": "10, 15, 19",
+    "Retrieved match": "✅",
+    "Final": 10,
+    "Match": "✅"
+  },
+  "Why is keeping people dependent on you a key strategy for security?": {
+    "ID": 11,
+    "Question": "Why is keeping people dependent on you a key strategy for security?",
+    "Expected": 11,
+    "Retrieved Top-3": "8, 11, 18",
+    "Retrieved match": "✅",
+    "Final": 11,
+    "Match": "✅"
+  },
+  "What law covers using selective honesty and generosity to disarm people?": {
+    "ID": 12,
+    "Question": "What law covers using selective honesty and generosity to disarm people?",
+    "Expected": 12,
+    "Retrieved Top-3": "12, 13, 15",
+    "Retrieved match": "✅",
+    "Final": 12,
+    "Match": "✅"
+  },
+  "How do you persuade someone by targeting their self-interest rather than mercy?": {
+    "ID": 13,
+    "Question": "How do you persuade someone by targeting their self-interest rather than mercy?",
+    "Expected": 13,
+    "Retrieved Top-3": "13, 3, 21",
+    "Retrieved match": "✅",
+    "Final": 13,
+    "Match": "✅"
+  },
+  "What principle suggests posing as a friendly ally while gathering information?": {
+    "ID": 14,
+    "Question": "What principle suggests posing as a friendly ally while gathering information?",
+    "Expected": 14,
+    "Retrieved Top-3": "14, 13, 2",
+    "Retrieved match": "✅",
+    "Final": 14,
+    "Match": "✅"
+  },
+  "Why must an enemy be crushed completely without leaving any spark behind?": {
+    "ID": 15,
+    "Question": "Why must an enemy be crushed completely without leaving any spark behind?",
+    "Expected": 15,
+    "Retrieved Top-3": "15, 22, 8",
+    "Retrieved match": "✅",
+    "Final": 15,
+    "Match": "✅"
+  },
+  "How does creating scarcity and temporary absence raise your perceived value?": {
+    "ID": 16,
+    "Question": "How does creating scarcity and temporary absence raise your perceived value?",
+    "Expected": 16,
+    "Retrieved Top-3": "16, 17, 1",
+    "Retrieved match": "✅",
+    "Final": 16,
+    "Match": "✅"
+  },
+  "Why does keeping your behavior unpredictable keep others on edge?": {
+    "ID": 17,
+    "Question": "Why does keeping your behavior unpredictable keep others on edge?",
+    "Expected": 17,
+    "Retrieved Top-3": "17, 8, 18",
+    "Retrieved match": "✅",
+    "Final": 17,
+    "Match": "✅"
+  },
+  "What is the danger of isolating yourself behind physical or social fortresses?": {
+    "ID": 18,
+    "Question": "What is the danger of isolating yourself behind physical or social fortresses?",
+    "Expected": 18,
+    "Retrieved Top-3": "18, 8, 16",
+    "Retrieved match": "✅",
+    "Final": 18,
+    "Match": "✅"
+  },
+  "How do you avoid offending the wrong person by understanding their personality?": {
+    "ID": 19,
+    "Question": "How do you avoid offending the wrong person by understanding their personality?",
+    "Expected": 19,
+    "Retrieved Top-3": "19, 12, 13",
+    "Retrieved match": "✅",
+    "Final": 19,
+    "Match": "✅"
+  },
+  "Why is remaining uncommitted to any single side or faction advantageous?": {
+    "ID": 20,
+    "Question": "Why is remaining uncommitted to any single side or faction advantageous?",
+    "Expected": 20,
+    "Retrieved Top-3": "20, 8, 22",
+    "Retrieved match": "✅",
+    "Final": 20,
+    "Match": "✅"
+  },
+  "What strategy recommends seeming less intelligent than your target to lower their guard?": {
+    "ID": 21,
+    "Question": "What strategy recommends seeming less intelligent than your target to lower their guard?",
+    "Expected": 21,
+    "Retrieved Top-3": "21, 3, 14",
+    "Retrieved match": "✅",
+    "Final": 21,
+    "Match": "✅"
+  },
+  "How can yielding and surrendering strategically turn a weak position into power?": {
+    "ID": 22,
+    "Question": "How can yielding and surrendering strategically turn a weak position into power?",
+    "Expected": 22,
+    "Retrieved Top-3": "22, 8, 1",
+    "Retrieved match": "✅",
+    "Final": 22,
+    "Match": "✅"
+  },
+  "Why is concentrating your forces more effective than scattering your resources?": {
+    "ID": 23,
+    "Question": "Why is concentrating your forces more effective than scattering your resources?",
+    "Expected": 23,
+    "Retrieved Top-3": "8, 23, 22",
+    "Retrieved match": "✅",
+    "Final": 23,
+    "Match": "✅"
+  },
+  "What are the key behavioral guidelines for mastering court politics?": {
+    "ID": 24,
+    "Question": "What are the key behavioral guidelines for mastering court politics?",
+    "Expected": 24,
+    "Retrieved Top-3": "24, 13, 20",
+    "Retrieved match": "✅",
+    "Final": 24,
+    "Match": "✅"
+  },
+  "Change identity/reputation": {
+    "ID": 25,
+    "Question": "Change identity/reputation",
+    "Expected": 25,
+    "Retrieved Top-3": "5, 25, 26",
+    "Retrieved match": "✅",
+    "Final": 25,
+    "Match": "✅"
+  },
+  "How do you reshape your public persona and create a dramatic personal identity?": {
+    "ID": 26,
+    "Question": "How do you reshape your public persona and create a dramatic personal identity?",
+    "Expected": 25,
+    "Retrieved Top-3": "25, 24, 5",
+    "Retrieved match": "✅",
+    "Final": 25,
+    "Match": "✅"
+  },
+  "Why must you use scapegoats and cat's-paws to keep your hands clean from mistakes?": {
+    "ID": 27,
+    "Question": "Why must you use scapegoats and cat's-paws to keep your hands clean from mistakes?",
+    "Expected": 26,
+    "Retrieved Top-3": "26, 10, 13",
+    "Retrieved match": "✅",
+    "Final": 26,
+    "Match": "✅"
+  },
+  "How do leaders play on the human desire to believe in something to build a loyal following?": {
+    "ID": 28,
+    "Question": "How do leaders play on the human desire to believe in something to build a loyal following?",
+    "Expected": 27,
+    "Retrieved Top-3": "27, 5, 13",
+    "Retrieved match": "✅",
+    "Final": 27,
+    "Match": "✅"
+  },
+  "Why does executing your decisions with bold confidence overcome hesitation and doubt?": {
+    "ID": 29,
+    "Question": "Why does executing your decisions with bold confidence overcome hesitation and doubt?",
+    "Expected": 28,
+    "Retrieved Top-3": "28, 17, 8",
+    "Retrieved match": "✅",
+    "Final": 28,
+    "Match": "✅"
+  },
+  "How can making your boss look more brilliant than you protect your standing?": {
+    "ID": 30,
+    "Question": "How can making your boss look more brilliant than you protect your standing?",
+    "Expected": 1,
+    "Retrieved Top-3": "21, 1, 5",
+    "Retrieved match": "✅",
+    "Final": 1,
+    "Match": "✅"
+  },
+  "Why does hiring a former enemy often yield more loyalty than hiring a friend?": {
+    "ID": 31,
+    "Question": "Why does hiring a former enemy often yield more loyalty than hiring a friend?",
+    "Expected": 2,
+    "Retrieved Top-3": "2, 15, 5",
+    "Retrieved match": "✅",
+    "Final": 2,
+    "Match": "✅"
+  },
+  "What technique uses decoy goals to keep rivals guessing about your true motives?": {
+    "ID": 32,
+    "Question": "What technique uses decoy goals to keep rivals guessing about your true motives?",
+    "Expected": 3,
+    "Retrieved Top-3": "14, 21, 5",
+    "Retrieved match": "❌",
+    "Final": 14,
+    "Match": "❌"
+  },
+  "Why does speaking less make you appear more powerful and unpredictable?": {
+    "ID": 33,
+    "Question": "Why does speaking less make you appear more powerful and unpredictable?",
+    "Expected": 4,
+    "Retrieved Top-3": "4, 8, 28",
+    "Retrieved match": "✅",
+    "Final": 4,
+    "Match": "✅"
+  },
+  "How does a single rumor destroy a person's standing if their reputation is unguarded?": {
+    "ID": 34,
+    "Question": "How does a single rumor destroy a person's standing if their reputation is unguarded?",
+    "Expected": 5,
+    "Retrieved Top-3": "5, 26, 21",
+    "Retrieved match": "✅",
+    "Final": 5,
+    "Match": "✅"
+  },
+  "Why is being ignored far worse than being criticized in public spheres?": {
+    "ID": 35,
+    "Question": "Why is being ignored far worse than being criticized in public spheres?",
+    "Expected": 6,
+    "Retrieved Top-3": "4, 6, 18",
+    "Retrieved match": "✅",
+    "Final": 6,
+    "Match": "✅"
+  },
+  "How do you get maximum output from a team while ensuring you receive final credit?": {
+    "ID": 36,
+    "Question": "How do you get maximum output from a team while ensuring you receive final credit?",
+    "Expected": 7,
+    "Retrieved Top-3": "7, 23, 13",
+    "Retrieved match": "✅",
+    "Final": 7,
+    "Match": "✅"
+  },
+  "My colleague takes credit for my work in meetings. Which law applies to taking credit?": {
+    "ID": 37,
+    "Question": "My colleague takes credit for my work in meetings. Which law applies to taking credit?",
+    "Expected": 7,
+    "Retrieved Top-3": "7, 13, 12",
+    "Retrieved match": "✅",
+    "Final": 7,
+    "Match": "✅"
+  },
+  "A rival manager is trying to bait me into a heated debate during a board call. How should I win?": {
+    "ID": 38,
+    "Question": "A rival manager is trying to bait me into a heated debate during a board call. How should I win?",
+    "Expected": 9,
+    "Retrieved Top-3": "17, 2, 22",
+    "Retrieved match": "❌",
+    "Final": 17,
+    "Match": "❌"
+  },
+  "My subordinate keeps bringing negative energy and bad luck to the team. What principle warns against this?": {
+    "ID": 39,
+    "Question": "My subordinate keeps bringing negative energy and bad luck to the team. What principle warns against this?",
+    "Expected": 10,
+    "Retrieved Top-3": "15, 8, 26",
+    "Retrieved match": "❌",
+    "Final": 15,
+    "Match": "❌"
+  },
+  "I need budget approval from another department head who owes me no favors. How should I frame my request?": {
+    "ID": 40,
+    "Question": "I need budget approval from another department head who owes me no favors. How should I frame my request?",
+    "Expected": 13,
+    "Retrieved Top-3": "13, 2, 15",
+    "Retrieved match": "✅",
+    "Final": 13,
+    "Match": "✅"
+  },
+  "An aggressive competitor is far stronger than my company right now. How can surrendering gain leverage?": {
+    "ID": 41,
+    "Question": "An aggressive competitor is far stronger than my company right now. How can surrendering gain leverage?",
+    "Expected": 22,
+    "Retrieved Top-3": "22, 8, 1",
+    "Retrieved match": "✅",
+    "Final": 22,
+    "Match": "✅"
+  },
+  "A project failed due to a severe oversight. How do I protect my standing by using a scapegoat?": {
+    "ID": 42,
+    "Question": "A project failed due to a severe oversight. How do I protect my standing by using a scapegoat?",
+    "Expected": 26,
+    "Retrieved Top-3": "26, 13, 10",
+    "Retrieved match": "✅",
+    "Final": 26,
+    "Match": "✅"
+  },
+  "My manager is insecure about their technical skills while I excel. How should I act around them?": {
+    "ID": 43,
+    "Question": "My manager is insecure about their technical skills while I excel. How should I act around them?",
+    "Expected": 1,
+    "Retrieved Top-3": "1, 5, 21",
+    "Retrieved match": "✅",
+    "Final": 1,
+    "Match": "✅"
+  },
+  "I want to build an eager group of supporters for a new movement. What law describes creating belief?": {
+    "ID": 44,
+    "Question": "I want to build an eager group of supporters for a new movement. What law describes creating belief?",
+    "Expected": 27,
+    "Retrieved Top-3": "27, 13, 9",
+    "Retrieved match": "✅",
+    "Final": 27,
+    "Match": "✅"
+  },
+  "Someone in another team is extremely sensitive and vengeful. Which principle warns me to tread carefully?": {
+    "ID": 45,
+    "Question": "Someone in another team is extremely sensitive and vengeful. Which principle warns me to tread carefully?",
+    "Expected": 19,
+    "Retrieved Top-3": "14, 15, 2",
+    "Retrieved match": "❌",
+    "Final": 14,
+    "Match": "❌"
+  },
+  "Two executive factions are asking me to join their side in a corporate feud. How should I handle commitment?": {
+    "ID": 46,
+    "Question": "Two executive factions are asking me to join their side in a corporate feud. How should I handle commitment?",
+    "Expected": 20,
+    "Retrieved Top-3": "20, 2, 13",
+    "Retrieved match": "✅",
+    "Final": 20,
+    "Match": "✅"
+  },
+  "I am negotiating a deal and want the opposing party to come to my office on my terms. What law applies?": {
+    "ID": 47,
+    "Question": "I am negotiating a deal and want the opposing party to come to my office on my terms. What law applies?",
+    "Expected": 8,
+    "Retrieved Top-3": "20, 13, 8",
+    "Retrieved match": "✅",
+    "Final": 8,
+    "Match": "✅"
+  },
+  "I am starting a new leadership role and need to make a strong impact immediately. How should I act?": {
+    "ID": 48,
+    "Question": "I am starting a new leadership role and need to make a strong impact immediately. How should I act?",
+    "Expected": 28,
+    "Retrieved Top-3": "13, 16, 24",
+    "Retrieved match": "❌",
+    "Final": 13,
+    "Match": "❌"
+  },
+  "How do I change how people perceive me?": {
+    "ID": 49,
+    "Question": "How do I change how people perceive me?",
+    "Expected": 25,
+    "Retrieved Top-3": "24, 13, 25",
+    "Retrieved match": "✅",
+    "Final": 25,
+    "Match": "✅"
+  },
+  "How can I build influence and respect among my peers?": {
+    "ID": 50,
+    "Question": "How can I build influence and respect among my peers?",
+    "Expected": 5,
+    "Retrieved Top-3": "5, 24, 13",
+    "Retrieved match": "✅",
+    "Final": 5,
+    "Match": "✅"
+  },
+  "What is the best way to handle an opponent who won't stop attacking?": {
+    "ID": 51,
+    "Question": "What is the best way to handle an opponent who won't stop attacking?",
+    "Expected": 15,
+    "Retrieved Top-3": "22, 8, 17",
+    "Retrieved match": "❌",
+    "Final": 22,
+    "Match": "❌"
+  },
+  "How do I make sure people don't take me for granted at work?": {
+    "ID": 52,
+    "Question": "How do I make sure people don't take me for granted at work?",
+    "Expected": 16,
+    "Retrieved Top-3": "16, 24, 5",
+    "Retrieved match": "✅",
+    "Final": 16,
+    "Match": "✅"
+  },
+  "How can I disarm a suspicious partner before pitching an idea?": {
+    "ID": 53,
+    "Question": "How can I disarm a suspicious partner before pitching an idea?",
+    "Expected": 12,
+    "Retrieved Top-3": "14, 21, 5",
+    "Retrieved match": "❌",
+    "Final": 14,
+    "Match": "❌"
+  },
+  "What should I do if I am surrounded by hostile rivals in an organization?": {
+    "ID": 54,
+    "Question": "What should I do if I am surrounded by hostile rivals in an organization?",
+    "Expected": 18,
+    "Retrieved Top-3": "2, 18, 15",
+    "Retrieved match": "✅",
+    "Final": 18,
+    "Match": "✅"
+  },
+  "How do I gather intelligence on what my competitors are planning next?": {
+    "ID": 55,
+    "Question": "How do I gather intelligence on what my competitors are planning next?",
+    "Expected": 14,
+    "Retrieved Top-3": "14, 3, 5",
+    "Retrieved match": "✅",
+    "Final": 14,
+    "Match": "✅"
+  },
+  "Why is it dangerous to let people know how hard you worked on a project?": {
+    "ID": 56,
+    "Question": "Why is it dangerous to let people know how hard you worked on a project?",
+    "Expected": 24,
+    "Retrieved Top-3": "5, 12, 4",
+    "Retrieved match": "❌",
+    "Final": 5,
+    "Match": "❌"
+  },
+  "How can appearing naive help you gain an advantage over an arrogant competitor?": {
+    "ID": 57,
+    "Question": "How can appearing naive help you gain an advantage over an arrogant competitor?",
+    "Expected": 21,
+    "Retrieved Top-3": "21, 3, 12",
+    "Retrieved match": "✅",
+    "Final": 21,
+    "Match": "✅"
+  },
+  "Should I focus all my energy on one main goal or spread out across multiple projects?": {
+    "ID": 58,
+    "Question": "Should I focus all my energy on one main goal or spread out across multiple projects?",
+    "Expected": 23,
+    "Retrieved Top-3": "23, 16, 7",
+    "Retrieved match": "✅",
+    "Final": 23,
+    "Match": "✅"
+  },
+  "How can I make my actions seem effortless while maintaining high standards?": {
+    "ID": 59,
+    "Question": "How can I make my actions seem effortless while maintaining high standards?",
+    "Expected": 24,
+    "Retrieved Top-3": "24, 25, 1",
+    "Retrieved match": "✅",
+    "Final": 24,
+    "Match": "✅"
+  },
+  "What should I do when someone tries to provoke me into an emotional reaction?": {
+    "ID": 60,
+    "Question": "What should I do when someone tries to provoke me into an emotional reaction?",
+    "Expected": 3,
+    "Retrieved Top-3": "22, 13, 17",
+    "Retrieved match": "❌",
+    "Final": 22,
+    "Match": "❌"
+  }
+}
