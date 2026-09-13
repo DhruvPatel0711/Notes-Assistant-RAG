@@ -89,5 +89,5 @@ class BGEEmbeddings(Embeddings):
 
     @property
     def dimension(self) -> int:
-        """Return the embedding dimension (1024 for bge-large)."""
-        return self._model.get_embedding_dimension()
+        """Return the embedding dimension."""
+        return self._model.get_sentence_embedding_dimension()
