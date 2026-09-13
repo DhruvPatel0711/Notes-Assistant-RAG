@@ -15,10 +15,6 @@ Features:
 import os
 import sys
 
-# Hot-swap sqlite3 for Streamlit Cloud (ChromaDB requires modern SQLite)
-__import__('pysqlite3')
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
-
 import streamlit as st
 
 # Must be the first Streamlit command
@@ -78,8 +74,8 @@ def load_retriever(k: int):
         db_path = root_dir / os.environ.get("CHROMA_DIR", "chroma_db")
         if not db_path.exists():
             with st.spinner("Building vector database for the first time... (takes ~5 seconds)"):
-                from src.ingestion.build_index import build_index
-                build_index(force=True)
+                import subprocess
+                subprocess.run([sys.executable, "-m", "src.ingestion.build_index"], cwd=str(root_dir), check=True)
                 
         # Initializing the retriever will load BGE and Chroma DB
         return get_retriever(k=k)
