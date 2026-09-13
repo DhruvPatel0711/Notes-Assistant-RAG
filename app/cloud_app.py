@@ -44,6 +44,14 @@ if not os.environ.get("GOOGLE_API_KEY"):
 
 # Import RAG components *after* ensuring API key is set,
 # so that the LLM clients initialize correctly.
+import sys
+from pathlib import Path
+
+# Ensure the root of the project is in the Python path so 'src' can be found
+root_dir = Path(__file__).resolve().parent.parent
+if str(root_dir) not in sys.path:
+    sys.path.append(str(root_dir))
+
 from src.generation.chain import ask, ask_situation
 from src.retrieval.retriever import get_retriever
 
