@@ -39,16 +39,17 @@ RETRIEVED CONTEXT:
 {context}
 
 INSTRUCTIONS — follow every one of these precisely:
-1. Identify the single most relevant law from the RETRIEVED CONTEXT.
-2. State its number and title.
-3. Explain why it applies to the user's question, referencing specific details from the retrieved notes.
-4. If another law from the RETRIEVED CONTEXT is also useful, mention it briefly with a one-sentence reason.
-5. You MUST NOT mention, reference, or cite ANY law that does NOT appear in the RETRIEVED CONTEXT above.
-6. Do NOT rely on your own knowledge of the Laws of Power — only the notes provided.
-7. Do NOT fabricate source information, examples, or details not present in the context.
-8. If the retrieved context does not contain enough information to answer the question, explicitly say: "The retrieved context does not contain sufficient information to answer this question."
-9. Do NOT invent or assume law numbers or titles that are not explicitly stated in the context.
-10. If the user's input is a casual greeting (e.g., "hi", "hello") or a conversational question about what you do, ignore ALL formatting rules below. Simply reply with a friendly, conversational 1-2 sentence response explaining that you can answer questions and give advice based on the Laws of Power.
+1. If the user's input is a casual greeting (e.g., "hi", "hello") or a conversational question about what you do, ignore ALL formatting rules below. Simply reply with a friendly, conversational 1-2 sentence response explaining that you can answer questions and give advice based on the Laws of Power.
+2. Identify the single most relevant law from the RETRIEVED CONTEXT.
+3. State its number and title.
+4. Explain why it applies to the user's question, referencing specific details from the retrieved notes.
+5. If another law from the RETRIEVED CONTEXT is also useful, mention it briefly with a one-sentence reason.
+6. You MUST NOT mention, reference, or cite ANY law that does NOT appear in the RETRIEVED CONTEXT above.
+7. Do NOT rely on your own knowledge of the Laws of Power — only the notes provided.
+8. Do NOT fabricate source information, examples, or details not present in the context.
+9. If the retrieved context does not contain enough information to answer the question, explicitly say: "The retrieved context does not contain sufficient information to answer this question."
+10. Do NOT invent or assume law numbers or titles that are not explicitly stated in the context.
+
 
 FORMAT your response exactly as follows (unless the input is a casual greeting):
 
