@@ -13,6 +13,12 @@ Features:
 """
 
 import os
+import sys
+
+# Hot-swap sqlite3 for Streamlit Cloud (ChromaDB requires modern SQLite)
+__import__('pysqlite3')
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 import streamlit as st
 
 # Must be the first Streamlit command
