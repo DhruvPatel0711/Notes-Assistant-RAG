@@ -47,6 +47,9 @@ if not os.environ.get("GOOGLE_API_KEY"):
     """)
     st.stop()
 
+# Force Cloud deployment to use the lightweight 80MB model by default
+os.environ.setdefault("EMBEDDING_MODEL", "all-MiniLM-L6-v2")
+os.environ.setdefault("CHROMA_DIR", "chroma_db_mini")
 
 # Import RAG components *after* ensuring API key is set,
 # so that the LLM clients initialize correctly.
@@ -107,7 +110,7 @@ with st.sidebar:
     
     st.markdown("---")
     st.markdown("**Architecture:**")
-    st.markdown("- **Embeddings**: BAAI/bge-large-en-v1.5")
+    st.markdown(f"- **Embeddings**: {os.environ.get('EMBEDDING_MODEL', 'BAAI/bge-large-en-v1.5')}")
     st.markdown("- **Vector Store**: ChromaDB")
     st.markdown("- **LLM**: Gemini-3.8-Flash (with fallback cascade)")
     st.markdown("- **Mode**: In-Process (Cloud Optimized)")
