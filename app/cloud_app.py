@@ -71,6 +71,13 @@ def load_retriever(k: int):
     from being reinitialized on every Streamlit rerun.
     """
     try:
+        # If the database doesn't exist (because we don't commit it to git), build it!
+        db_path = root_dir / os.environ.get("CHROMA_DIR", "chroma_db")
+        if not db_path.exists():
+            with st.spinner("Building vector database for the first time... (takes ~5 seconds)"):
+                import subprocess
+                subprocess.run([sys.executable, "-m", "src.ingestion.build_index"], cwd=str(root_dir), check=True)
+                
         # Initializing the retriever will load BGE and Chroma DB
         return get_retriever(k=k)
     except Exception as e:
