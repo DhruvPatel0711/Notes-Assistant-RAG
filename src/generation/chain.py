@@ -127,20 +127,23 @@ def _build_rag_chain(prompt_template=None, k: int | None = None):
     llm = get_llm_with_fallbacks()
     output_parser = StrOutputParser()
 
-    # Step 1: Retrieve docs + pass question through
+    from operator import itemgetter
+
+    # Step 1: Retrieve docs + pass question and history through
+    # We now expect the input to be a dict: {"question": str, "chat_history": str}
     retrieve_and_pass = RunnableParallel({
-        "retrieved_docs": retriever,
-        "question": RunnablePassthrough(),
+        "retrieved_docs": itemgetter("question") | retriever,
+        "question": itemgetter("question"),
+        "chat_history": itemgetter("chat_history"),
     })
 
     # Step 2: Format context and generate answer, extract sources
-    # We use RunnableParallel again to produce both answer and sources
-    # from the same retrieved_docs (single retrieval, dual use).
     generate_and_extract = RunnableParallel({
         "answer": (
             RunnableLambda(lambda x: {
                 "context": format_docs(x["retrieved_docs"]),
                 "question": x["question"],
+                "chat_history": x["chat_history"],
             })
             | prompt
             | llm
@@ -159,12 +162,13 @@ def _build_rag_chain(prompt_template=None, k: int | None = None):
 # ═══════════════════════════════════════════════════════════════════
 
 
-def ask(question: str, k: int | None = None) -> dict:
+def ask(question: str, k: int | None = None, chat_history: str = "") -> dict:
     """Ask a question and get a grounded answer with sources.
 
     Args:
         question: The user's question about Laws of Power.
         k: Number of documents to retrieve. Defaults to settings.top_k.
+        chat_history: Formatted string of previous messages.
 
     Returns:
         Dict with keys:
@@ -172,12 +176,12 @@ def ask(question: str, k: int | None = None) -> dict:
             - "sources": List of source dicts [{law, title, source}, ...]
     """
     chain = _build_rag_chain(prompt_template=RAG_PROMPT, k=k)
-    result = chain.invoke(question)
+    result = chain.invoke({"question": question, "chat_history": chat_history})
     logger.info("Question answered: '%s' → %d sources", question[:50], len(result["sources"]))
     return result
 
 
-def ask_situation(situation: str, k: int | None = None) -> dict:
+def ask_situation(situation: str, k: int | None = None, chat_history: str = "") -> dict:
     """Describe a situation and get relevant law + practical advice.
 
     Uses the SITUATION_PROMPT which adds a 'What you should do' section.
@@ -185,6 +189,7 @@ def ask_situation(situation: str, k: int | None = None) -> dict:
     Args:
         situation: Description of the user's real situation.
         k: Number of documents to retrieve. Defaults to settings.top_k.
+        chat_history: Formatted string of previous messages.
 
     Returns:
         Dict with keys:
@@ -192,6 +197,6 @@ def ask_situation(situation: str, k: int | None = None) -> dict:
             - "sources": List of source dicts [{law, title, source}, ...]
     """
     chain = _build_rag_chain(prompt_template=SITUATION_PROMPT, k=k)
-    result = chain.invoke(situation)
+    result = chain.invoke({"question": situation, "chat_history": chat_history})
     logger.info("Situation answered: '%s' → %d sources", situation[:50], len(result["sources"]))
     return result

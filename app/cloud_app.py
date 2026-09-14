@@ -147,11 +147,17 @@ if prompt := st.chat_input("Ask about power dynamics..."):
         
         with st.spinner("Consulting the laws... (First request may take longer to load models)"):
             try:
+                # Format chat history (exclude the prompt we just appended)
+                chat_history_str = ""
+                for msg in st.session_state.messages[:-1]:
+                    role_str = "User" if msg["role"] == "user" else "Assistant"
+                    chat_history_str += f"{role_str}: {msg['content']}\n\n"
+
                 # Direct in-process call to the LCEL chain
                 if mode == "Situation Advice":
-                    result = ask_situation(prompt, k=k_value)
+                    result = ask_situation(prompt, k=k_value, chat_history=chat_history_str)
                 else:
-                    result = ask(prompt, k=k_value)
+                    result = ask(prompt, k=k_value, chat_history=chat_history_str)
                     
                 answer = result["answer"]
                 sources = result["sources"]

@@ -77,15 +77,21 @@ if prompt := st.chat_input("Ask about power dynamics..."):
         
         with st.spinner("Consulting the laws..."):
             try:
-                # Call the FastAPI backend
-                api_mode = "situation" if mode == "Situation Advice" else "standard"
+                # Format chat history
+                chat_history_str = ""
+                for msg in st.session_state.messages[:-1]:
+                    role_str = "User" if msg["role"] == "user" else "Assistant"
+                    chat_history_str += f"{role_str}: {msg['content']}\n\n"
+
+                # Send request to backend
                 payload = {
-                    "query": prompt,
-                    "mode": api_mode,
-                    "k": k_value
+                    "question": prompt,
+                    "k": k_value,
+                    "chat_history": chat_history_str
                 }
                 
-                response = requests.post(f"{API_URL}/ask", json=payload)
+                endpoint = "/ask/situation" if mode == "Situation Advice" else "/ask"
+                response = requests.post(f"{API_URL}{endpoint}", json=payload)
                 
                 if response.status_code == 200:
                     data = response.json()

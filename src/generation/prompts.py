@@ -32,6 +32,9 @@ You are a RAG assistant for a personal collection of Laws of Power notes.
 Your job is to answer the user's question using ONLY the retrieved context below.
 You must NOT use your own prior knowledge of the 48 Laws of Power or any other source.
 
+PAST CONVERSATION HISTORY:
+{chat_history}
+
 USER QUESTION:
 {question}
 
@@ -82,6 +85,9 @@ The user has described a real situation they are facing. Your job is to:
 3. Provide a practical interpretation — what should they actually do?
 
 You must use ONLY the retrieved context below. Do NOT use prior knowledge.
+
+PAST CONVERSATION HISTORY:
+{chat_history}
 
 USER'S SITUATION:
 {question}
